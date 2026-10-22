@@ -18,6 +18,22 @@
     <link href="./css/bootstrap-5.3.7.min.css" rel="stylesheet" media="screen" />
     <link href="./css/structurizr-static.css" rel="stylesheet" media="screen" />
     <link href="./css/structurizr.css" rel="stylesheet" media="screen" />
+    <style id="white-diagram-background">
+        /* Override only diagram backgrounds; keep the existing theme and palette. */
+        body,
+        #diagram,
+        #diagram-viewport,
+        #diagram-canvas,
+        #diagram-canvas > .joint-paper-background {
+            background-color: #ffffff !important;
+        }
+
+        /* Relationship label backplates are part of the diagram background. */
+        #diagram-canvas .joint-link .labels rect.structurizrDescription,
+        #diagram-canvas .joint-link .labels rect.structurizrMetaData {
+            fill: #ffffff !important;
+        }
+    </style>
 </head>
 <body>
     <span style="font-family: Tahoma, Verdana, Arial, sans-serif; opacity: 0;"></span>
